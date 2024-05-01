@@ -7,7 +7,8 @@ const Results = forwardRef(({ resObj }, resultsRef) => {
     return (
         <>
             <h2>Calculation results &#10024;</h2>
-            <p>With a gross salary of Ksh. {gross}, your statutory deductions and net pay are as tabulated below:</p>
+            <p>With a gross salary of Ksh. {gross}, your statutory deductions and net pay are as tabulated below.&nbsp;
+            <em>Please note that your employer may include additional deductions in your payslip</em> e.g. union contributions.</p>
             <div className='table-wrapper' ref={resultsRef}>
                 <table className={styles.results}>
                     <tbody>

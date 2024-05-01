@@ -58,7 +58,7 @@ const Home = () => {
         {Object.keys(results).length <= 0 && <div className="gross-form">
           <h1>Let's calculate your net salary and statutory deductions</h1>
           <form onSubmit={(e) => handleSubmit(e)}>
-            <label htmlFor="gross-input">Please enter your gross income below</label>
+            <label htmlFor="gross-input">Please enter your gross income below in Kenyan shillings.</label>
             <input name="gross-input" placeholder="Gross salary" type="number" id="gross-input" required onChange={e => handleInputChange(e)} value={gross} />
             <p className="error">{err}</p>
             <input type="submit" value="Calculate" disabled={err.length !== 0} />
