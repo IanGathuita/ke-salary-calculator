@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ke-salary-calculator/static/css/main.38187c42.css",
+    "main.js": "/ke-salary-calculator/static/js/main.cd830963.js",
+    "static/js/453.77b56d92.chunk.js": "/ke-salary-calculator/static/js/453.77b56d92.chunk.js",
+    "index.html": "/ke-salary-calculator/index.html",
+    "static/media/Logo.svg": "/ke-salary-calculator/static/media/Logo.44c372583736ccd3aa3f1cb574aa7338.svg",
+    "main.38187c42.css.map": "/ke-salary-calculator/static/css/main.38187c42.css.map",
+    "main.cd830963.js.map": "/ke-salary-calculator/static/js/main.cd830963.js.map",
+    "453.77b56d92.chunk.js.map": "/ke-salary-calculator/static/js/453.77b56d92.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38187c42.css",
+    "static/js/main.cd830963.js"
+  ]
+}
