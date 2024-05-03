@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/ke-salary-calculator/static/css/main.38187c42.css",
-    "main.js": "/ke-salary-calculator/static/js/main.cd830963.js",
-    "static/js/453.77b56d92.chunk.js": "/ke-salary-calculator/static/js/453.77b56d92.chunk.js",
+    "main.css": "/ke-salary-calculator/static/css/main.c15ebc5e.css",
+    "main.js": "/ke-salary-calculator/static/js/main.e894eda2.js",
+    "static/js/206.fe2dd8cd.chunk.js": "/ke-salary-calculator/static/js/206.fe2dd8cd.chunk.js",
     "index.html": "/ke-salary-calculator/index.html",
-    "static/media/Logo.svg": "/ke-salary-calculator/static/media/Logo.44c372583736ccd3aa3f1cb574aa7338.svg",
-    "main.38187c42.css.map": "/ke-salary-calculator/static/css/main.38187c42.css.map",
-    "main.cd830963.js.map": "/ke-salary-calculator/static/js/main.cd830963.js.map",
-    "453.77b56d92.chunk.js.map": "/ke-salary-calculator/static/js/453.77b56d92.chunk.js.map"
+    "static/media/Logo.svg": "/ke-salary-calculator/static/media/Logo.44c372583736ccd3aa3f1cb574aa7338.svg"
   },
   "entrypoints": [
-    "static/css/main.38187c42.css",
-    "static/js/main.cd830963.js"
+    "static/css/main.c15ebc5e.css",
+    "static/js/main.e894eda2.js"
   ]
 }
