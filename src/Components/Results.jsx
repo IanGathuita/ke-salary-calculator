@@ -2,7 +2,7 @@ import { forwardRef } from 'react';
 import styles from '../Styles/Results.module.css';
 
 const Results = forwardRef(({ resObj }, resultsRef) => {
-    const { gross, nssf, payeAfterRelief, nhif, housingLevy, net } = resObj.results;
+    const { gross, nssf, payeAfterRelief, shif, housingLevy, net } = resObj.results;
     const setResults = resObj.setResults;
     return (
         <>
@@ -28,8 +28,8 @@ const Results = forwardRef(({ resObj }, resultsRef) => {
                         </tr>
 
                         <tr>
-                            <td>NHIF</td>
-                            <td>{nhif}</td>
+                            <td>SHIF</td>
+                            <td>{shif}</td>
                         </tr>
 
                         <tr>
