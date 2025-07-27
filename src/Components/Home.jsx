@@ -4,8 +4,6 @@ import logo from '../Assets/Logo.svg';
 import Results from "./Results";
 
 const PERSONAL_RELIEF = 2400;
-const SHIF_RELIEF_PERCENTAGE = 0;
-const HOUSING_LEVY_RELIEF_PERCENTAGE = 0.15;
 
 const Home = () => {
   const [gross, setGross] = useState(0);
@@ -23,8 +21,7 @@ const Home = () => {
         throw new Error('Gross salary must be a positive number greater than 0');
       }
       const { nssf, paye, shif, housingLevy } = calculateStatutories(gross);
-      const relief = (PERSONAL_RELIEF + (SHIF_RELIEF_PERCENTAGE * shif) + (HOUSING_LEVY_RELIEF_PERCENTAGE * housingLevy)).toFixed(2);
-      const payeAfterRelief = (Math.round((paye - relief) > 0 ? paye - relief : 0)).toFixed(2);
+      const payeAfterRelief = (Math.round((paye - PERSONAL_RELIEF) > 0 ? paye - PERSONAL_RELIEF : 0)).toFixed(2);
       const net = Math.round((gross - nssf - payeAfterRelief - shif - housingLevy)).toFixed(2);
       const resultsObj = { gross: gross.toFixed(2), nssf, payeAfterRelief, shif, housingLevy, net }
       setResults(r => resultsObj);
