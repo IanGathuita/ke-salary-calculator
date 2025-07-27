@@ -1,12 +1,12 @@
 const calculateStatutories = (gross) => {
     if (gross <= 0) throw Error('Gross cannot be negative');
-    const nssf = (gross <=8000) ? (0.06* gross) : (gross <=72000) ? (480 + (0.06 * (gross-8000))): 4320;
-    const housingLevy = 0.015 * gross;
+    const nssf = Math.round((gross <=8000) ? (0.06* gross) : (gross <=72000) ? (480 + (0.06 * (gross-8000))): 4320);
+    const housingLevy = Math.round(0.015 * gross);
     const shif = calculateSHIF(gross);
     const taxablePay = gross - nssf - shif - housingLevy;
     const paye = calculatePaye(taxablePay);
     
-    return {nssf: Math.round(nssf).toFixed(2),paye:paye.toFixed(2),shif:shif.toFixed(2),housingLevy: Math.round(housingLevy).toFixed(2)}
+    return {nssf,paye,shif:shif,housingLevy}
 }
 
 const calculatePaye = (taxablePay) => {

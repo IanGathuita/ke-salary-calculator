@@ -21,9 +21,9 @@ const Home = () => {
         throw new Error('Gross salary must be a positive number greater than 0');
       }
       const { nssf, paye, shif, housingLevy } = calculateStatutories(gross);
-      const payeAfterRelief = (Math.round((paye - PERSONAL_RELIEF) > 0 ? paye - PERSONAL_RELIEF : 0)).toFixed(2);
-      const net = Math.round((gross - nssf - payeAfterRelief - shif - housingLevy)).toFixed(2);
-      const resultsObj = { gross: gross.toFixed(2), nssf, payeAfterRelief, shif, housingLevy, net }
+      const payeAfterRelief = (Math.round((paye - PERSONAL_RELIEF) > 0 ? paye - PERSONAL_RELIEF : 0));
+      const net = Math.round((gross - nssf - payeAfterRelief - shif - housingLevy));
+      const resultsObj = { gross, nssf, payeAfterRelief, shif, housingLevy, net }
       setResults(r => resultsObj);
     }
     catch (e) {
